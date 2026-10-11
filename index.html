@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>拾光笔记</title>
+  <meta name="description" content="一个分享学习笔记与成果的网站">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="navbar">
+    <a class="logo" href="#">拾光笔记</a>
+
+    <nav>
+      <a href="#">首页</a>
+      <a href="#notes">学习笔记</a>
+      <a href="#about">关于本站</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="tag">一起记录，一起进步</p>
+      <h1>分享知识，留下成长的足迹</h1>
+      <p class="description">
+        这里收集大家的学习笔记、实践经验和学习成果，
+        希望每一份认真记录的知识都能帮助更多人。
+      </p>
+
+      <div class="search-box">
+        <input id="searchInput" type="search" placeholder="搜索笔记标题或作者">
+        <button id="searchButton">搜索</button>
+      </div>
+    </section>
+
+    <section class="notes-section" id="notes">
+      <div class="section-heading">
+        <div>
+          <p class="tag">EXPLORE NOTES</p>
+          <h2>发现学习笔记</h2>
+        </div>
+
+        <div class="categories">
+          <button class="category active" data-category="全部">全部</button>
+          <button class="category" data-category="编程">编程</button>
+          <button class="category" data-category="英语">英语</button>
+          <button class="category" data-category="数学">数学</button>
+        </div>
+      </div>
+
+      <div class="note-list">
+        <article class="note-card" data-category="编程">
+          <span class="note-category">编程</span>
+          <h3>HTML 入门学习笔记</h3>
+          <p>认识网页的基本结构，以及标题、段落和链接等常用标签。</p>
+          <div class="note-info">
+            <span>作者：小明</span>
+            <span>5 分钟阅读</span>
+          </div>
+        </article>
+
+        <article class="note-card" data-category="英语">
+          <span class="note-category">英语</span>
+          <h3>英语单词记忆方法</h3>
+          <p>通过词根、例句和间隔复习，提高单词记忆效率。</p>
+          <div class="note-info">
+            <span>作者：小雨</span>
+            <span>4 分钟阅读</span>
+          </div>
+        </article>
+
+        <article class="note-card" data-category="数学">
+          <span class="note-category">数学</span>
+          <h3>一元二次方程知识整理</h3>
+          <p>整理常见解法、判别式以及容易出错的重点问题。</p>
+          <div class="note-info">
+            <span>作者：小林</span>
+            <span>6 分钟阅读</span>
+          </div>
+        </article>
+      </div>
+
+      <p id="emptyMessage" class="empty-message">没有找到相关笔记。</p>
+    </section>
+
+    <section class="about" id="about">
+      <h2>关于本站</h2>
+      <p>
+        拾光笔记是一个学习成果分享空间。我们相信，记录能够帮助自己，
+        分享也能照亮别人。
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 拾光笔记 · 保持好奇，持续学习</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
